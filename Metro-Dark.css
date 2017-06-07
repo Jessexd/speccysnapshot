@@ -1,0 +1,84 @@
+/* Made by desgen */
+/* Edited by Mandevwin */
+ 
+* {
+    font-family: dejavu sans;
+    font-size: 2vmin;
+}
+.clear {
+    clear: both;
+}
+img {
+    display: none;
+}
+body {
+    background: #1d1d1d;
+    background-repeat: repeat;
+    color: #fff;
+    font-family: Verdana, Arial, Helvetica;
+    font-size: 8pt;
+    padding: 10px 15px;
+}
+#wrapper {
+    background: #1d1d1d;
+    width: 100%;
+    border: none;
+}
+.blue,
+.blue a {
+    color: #2b5797;
+    margin-top: 5px;
+}
+.indent {
+    left: 24px;
+    background: #1d1d1d;
+}
+.mainsection {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 15px 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 96%;
+    width: 75%;
+    display: none;
+}
+.datakey {
+    float: left;
+    color: #fff;
+}
+.datavalue {
+    float: left;
+    color: #ffc40d;
+}
+.blue > div {
+    display: none;
+}
+.btn-info {
+    position: relative;
+    color: #fff;
+    background-color: #2b5797;
+    margin-top: 10px;
+    width: 20%;
+    font-size: calc(0.8vw + 1vh)!important;
+    border-radius: 0px;
+    border: 0px;
+}
+.btn-info:hover {
+    color: #fff;
+    background-color: #1e7145;
+    border: 0px;
+}
+.btn-info.focus,
+.btn-info:focus {
+    color: #fff;
+    background-color: #1e7145;
+    border: 0px;
+}
+div:nth-of-type(2) > .clear.blue:nth-of-type(31){
+        display: none;
+}
+.clear.blue:nth-of-type(47){
+    display: none;
+}
