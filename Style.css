@@ -35,7 +35,7 @@ body {
 }
 .mainsection {
     position: fixed;
-	top: 0;
+    top: 0;
     right: 0;
     margin: 15px 15px;
     overflow-y: scroll;
@@ -43,7 +43,6 @@ body {
     height: 96%;
     width: 75%;
     display: none;
-       
 }
 .datakey {
     float: left;
@@ -62,7 +61,7 @@ body {
     background-color: #073642;
     border-color: #586e75;
     margin-top: 10px;
-    width: 15%;
+    width: 20%;
     font-size: calc(0.8vw + 1vh)!important;
 }
 .btn-info:hover {
