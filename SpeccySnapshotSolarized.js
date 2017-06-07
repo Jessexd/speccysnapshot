@@ -66,16 +66,6 @@
         $(".mainsection:nth-of-type(4)").slideToggle(animation_delay_time);
     });
 
-    $("#serv").click(function(){
-        $(".mainsection").hide();
-        $("div:nth-of-type(2) > .indent:nth-of-type(32)").slideToggle(animation_delay_time);
-    });
-
-    $("#proc").click(function(){
-        $(".mainsection").hide();
-        $("div:nth-of-type(2) > .indent:nth-of-type(49)").slideToggle(animation_delay_time);
-    });
-
     $("#cpu").click(function(){
         $(".mainsection").hide();
         $(".mainsection:nth-of-type(6)").slideToggle(animation_delay_time);
