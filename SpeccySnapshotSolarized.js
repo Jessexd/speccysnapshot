@@ -7,10 +7,10 @@
 // @match        http://speccy.piriform.com/results/*
 // @grant        GM_addStyle
 // @grant        GM_getResourceText
-// @require  https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
-// @require  https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js
-// @resource    customCSS https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
-// @resource customCSS1 https://raw.githubusercontent.com/Jessexd/speccysnapshot/master/Style.css
+// @require      https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
+// @require      https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js
+// @resource     customCSS https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+// @resource     customCSS1 https://raw.githubusercontent.com/Jessexd/speccysnapshot/master/Style.css
 // ==/UserScript==
 
 (function() {
