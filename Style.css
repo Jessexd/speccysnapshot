@@ -3,7 +3,7 @@
  
 * {
     font-family: dejavu sans;
-    font-size: 1vmin;
+    font-size: 2vmin;
 }
 .clear {
     clear: both;
@@ -63,7 +63,7 @@ body {
     border-color: #586e75;
     margin-top: 10px;
     width: 15%;
-    font-size: calc(0.8vw + 1vh)!important;
+    font-size: calc(0.8vw + 0.5vh)!important;
 }
 .btn-info:hover {
     color: #839496;
