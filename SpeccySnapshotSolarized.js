@@ -1,66 +1,123 @@
 // ==UserScript==
 // @name         SpeccySnapshotSolarized
 // @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  try to take over the world!
-// @author       desgen
+// @version      1.0
+// @description  Theme for speccy snapshots.
+// @author       desgen + mandevwin
 // @match        http://speccy.piriform.com/results/*
 // @grant        GM_addStyle
-// @grant       GM_getResourceText
+// @grant        GM_getResourceText
 // @require  https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
-// @require https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js
+// @require  https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js
 // @resource    customCSS https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
 // ==/UserScript==
 
 (function() {
     'use strict';
 
+    // Resource CSS
+
     var newCSS = GM_getResourceText ("customCSS");
     GM_addStyle (newCSS);
 
-    GM_addStyle ('#wrapper,.indent,body{background:#002b36}.blue>div,.mainsection,img{display:none}*{font-family:dejavu sans;font-size:15px}.clear{clear:both}body{color:#fff;font-family:Verdana,Arial,Helvetica;font-size:8pt;padding:10px 15px}#wrapper{width:950px;border:none}.blue,.blue a{color:#268bd2;margin-top:5px}.indent{padding-left:24px}.mainsection{margin:15px;padding-top:10px;clear:both}.datakey{float:left;color:#839496}.datavalue{float:left;color:#b58900}.btn-info{color:#839496;background-color:#073642;border-color:#586e75;margin-top:10px}.btn-info.focus,.btn-info:focus,.btn-info:hover{color:#839496;background-color:#fdf6e3;border-color:#586e75}');
+    GM_addStyle ('#wrapper,.indent,body{background:#002b36}.blue>div,.clear.blue:nth-of-type(47),.mainsection,div:nth-of-type(2)>.clear.blue:nth-of-type(31),img{display:none}*{font-family:dejavu sans;font-size:2vmin}.clear{clear:both}body{color:#fff;font-family:Verdana,Arial,Helvetica;font-size:8pt;padding:10px 15px}#wrapper{width:100%;border:none}.blue,.blue a{color:#268bd2;margin-top:5px}.indent{left:24px}.mainsection{position:fixed;top:0;right:0;margin:15px;overflow-y:scroll;overflow-x:hidden;height:96%;width:75%}.datakey{float:left;color:#839496}.datavalue{float:left;color:#b58900}.btn-info{position:relative;color:#839496;background-color:#073642;border-color:#586e75;margin-top:10px;width:15%;font-size:calc(.8vw + 1vh)!important}.btn-info.focus,.btn-info:focus,.btn-info:hover{color:#839496;background-color:#fdf6e3;border-color:#586e75}');
 
-    $( '<br><button type="button" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(2)">Summary</button> <div id=".mainsection:nth-of-type(2)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(2)" );
+    // Button stuff
 
+    $( '<br><button type="button" id="sum" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(2)">Summary</button> <div id=".mainsection:nth-of-type(2)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(2)" );
 
+    $( '<br><button type="button" id="os" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(4)">Operating System</button> <div id=".mainsection:nth-of-type(4)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(4)" );
 
-    $( '<br><button type="button" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(4)">Operating System</button> <div id=".mainsection:nth-of-type(4)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(4)" );
-// $( '<br><button type="button" class="btn btn-info" data-toggle="collapse" data-target="div:nth-of-type(2) > .indent:nth-of-type(32)">Services</button> <div id="div:nth-of-type(2) > .indent:nth-of-type(32)" class="collapse"></br>' ).insertAfter( "div:nth-of-type(2) > .indent:nth-of-type(32)" );
-// $( '<br><button type="button" class="btn btn-info" data-toggle="collapse" data-target="div:nth-of-type(2) > .indent:nth-of-type(49)">Proccess List</button> <div id="div:nth-of-type(2) > .indent:nth-of-type(49)" class="collapse"></br>' ).insertAfter( "div:nth-of-type(2) > .indent:nth-of-type(49)" );
+    $( '<br><button type="button" id="cpu" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(6)">CPU</button> <div id=".mainsection:nth-of-type(6)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(6)" );
 
+    $( '<br><button type="button" id="ram" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(8)">RAM</button> <div id=".mainsection:nth-of-type(8)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(8)" );
 
-    $( '<br><button type="button" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(6)">CPU</button> <div id=".mainsection:nth-of-type(6)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(6)" );
+    $( '<br><button type="button" id="mobo" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(10)">Motherboard</button> <div id=".mainsection:nth-of-type(10)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(10)" );
 
+    $( '<br><button type="button" id="gpu" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(12)">Graphics</button> <div id=".mainsection:nth-of-type(12)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(12)" );
 
+    $( '<br><button type="button" id="hdd" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(14)">Storage</button> <div id=".mainsection:nth-of-type(14)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(14)" );
 
-    $( '<br><button type="button" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(8)">RAM</button> <div id=".mainsection:nth-of-type(8)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(8)" );
+    $( '<br><button type="button" id="opt" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(16)">Optical Drives</button> <div id=".mainsection:nth-of-type(16)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(16)" );
 
+    $( '<br><button type="button" id="aud" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(18)">Audio</button> <div id=".mainsection:nth-of-type(18)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(18)" );
 
+    $( '<br><button type="button" id="peri" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(20)">Peripherals</button> <div id=".mainsection:nth-of-type(20)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(20)" );
 
-    $( '<br><button type="button" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(10)">Motherboard</button> <div id=".mainsection:nth-of-type(10)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(10)" );
+    $( '<br><button type="button" id="net" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(22)">Network</button> <div id=".mainsection:nth-of-type(22)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(22)" );
 
+    //  Default Hide
 
+    //$(".mainsection").hide();
 
-    $( '<br><button type="button" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(12)">Graphics</button> <div id=".mainsection:nth-of-type(12)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(12)" );
+    // Toggle Buttons
 
+    var animation_delay_time = 1000;
 
+    $("#sum").click(function(){
+        $(".mainsection").hide();
+        $(".mainsection:nth-of-type(2)").slideToggle(animation_delay_time);
+    });
 
-    $( '<br><button type="button" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(14)">Storage</button> <div id=".mainsection:nth-of-type(14)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(14)" );
+    $("#os").click(function(){
+        $(".mainsection").hide();
+        $(".mainsection:nth-of-type(4)").slideToggle(animation_delay_time);
+    });
 
+    $("#serv").click(function(){
+        $(".mainsection").hide();
+        $("div:nth-of-type(2) > .indent:nth-of-type(32)").slideToggle(animation_delay_time);
+    });
 
+    $("#proc").click(function(){
+        $(".mainsection").hide();
+        $("div:nth-of-type(2) > .indent:nth-of-type(49)").slideToggle(animation_delay_time);
+    });
 
-    $( '<br><button type="button" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(16)">Optical Drives</button> <div id=".mainsection:nth-of-type(16)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(16)" );
+    $("#cpu").click(function(){
+        $(".mainsection").hide();
+        $(".mainsection:nth-of-type(6)").slideToggle(animation_delay_time);
+    });
 
+    $("#ram").click(function(){
+        $(".mainsection").hide();
+        $(".mainsection:nth-of-type(8)").slideToggle(animation_delay_time);
+    });
 
+    $("#mobo").click(function(){
+        $(".mainsection").hide();
+        $(".mainsection:nth-of-type(10)").slideToggle(animation_delay_time);
+    });
 
-    $( '<br><button type="button" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(18)">Audio</button> <div id=".mainsection:nth-of-type(18)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(18)" );
+    $("#gpu").click(function(){
+        $(".mainsection").hide();
+        $(".mainsection:nth-of-type(12)").slideToggle(animation_delay_time);
+    });
 
+    $("#hdd").click(function(){
+        $(".mainsection").hide();
+        $(".mainsection:nth-of-type(14)").slideToggle(animation_delay_time);
+    });
 
+    $("#opt").click(function(){
+        $(".mainsection").hide();
+        $(".mainsection:nth-of-type(16)").slideToggle(animation_delay_time);
+    });
 
-    $( '<br><button type="button" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(20)">Peripherals</button> <div id=".mainsection:nth-of-type(20)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(20)" );
+    $("#aud").click(function(){
+        $(".mainsection").hide();
+        $(".mainsection:nth-of-type(18)").slideToggle(animation_delay_time);
+    });
 
+    $("#peri").click(function(){
+        $(".mainsection").hide();
+        $(".mainsection:nth-of-type(20)").slideToggle(animation_delay_time);
+    });
 
+    $("#net").click(function(){
+        $(".mainsection").hide();
+        $(".mainsection:nth-of-type(22)").slideToggle(animation_delay_time);
+    });
 
-    $( '<br><button type="button" class="btn btn-info" data-toggle="collapse" data-target=".mainsection:nth-of-type(22)">Network</button> <div id=".mainsection:nth-of-type(22)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(22)" );
     // Your code here...
 })();
