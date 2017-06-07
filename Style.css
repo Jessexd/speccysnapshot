@@ -1,9 +1,9 @@
-@-moz-document domain("speccy.piriform.com") {
 /* Made by desgen */
-
+/* Edited by Mandevwin */
+ 
 * {
     font-family: dejavu sans;
-    font-size: 15px;
+    font-size: 2vmin;
 }
 .clear {
     clear: both;
@@ -21,7 +21,7 @@ body {
 }
 #wrapper {
     background: #002b36;
-    width: 950px;
+    width: 100%;
     border: none;
 }
 .blue,
@@ -30,14 +30,20 @@ body {
     margin-top: 5px;
 }
 .indent {
-    padding-left: 24px;
+    left: 24px;
     background: #002b36;
 }
 .mainsection {
+    position: fixed;
+	top: 0;
+    right: 0;
     margin: 15px 15px;
-    padding-top: 10px;
-    clear: both;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 96%;
+    width: 75%;
     display: none;
+       
 }
 .datakey {
     float: left;
@@ -51,10 +57,13 @@ body {
     display: none;
 }
 .btn-info {
+    position: relative;
     color: #839496;
     background-color: #073642;
     border-color: #586e75;
     margin-top: 10px;
+    width: 15%;
+    font-size: calc(0.8vw + 1vh)!important;
 }
 .btn-info:hover {
     color: #839496;
@@ -67,4 +76,9 @@ body {
     background-color: #fdf6e3;
     border-color: #586e75;
 }
+div:nth-of-type(2) > .clear.blue:nth-of-type(31){
+        display: none;
+}
+.clear.blue:nth-of-type(47){
+    display: none;
 }
