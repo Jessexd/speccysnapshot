@@ -48,11 +48,7 @@
  
     $( '<br><button type="button" id="net" class="btn btn-info" data-toggle="show" data-target=".mainsection:nth-of-type(22)">Network</button> <div id=".mainsection:nth-of-type(22)" class="collapse"></br>' ).insertAfter( ".mainsection:nth-of-type(22)" );
  
-    //  Default Hide
- 
     // Toggle Buttons
- 
-
  
     $("#sum").click(function(){
         $(".mainsection").hide();
