@@ -50,8 +50,6 @@
  
     //  Default Hide
  
-    //$(".mainsection").hide();
- 
     // Toggle Buttons
  
 
