@@ -10,6 +10,7 @@
 // @require  https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
 // @require  https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js
 // @resource    customCSS https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+// @resource customCSS1 https://raw.githubusercontent.com/Jessexd/speccysnapshot/master/Style.css
 // ==/UserScript==
 
 (function() {
@@ -20,7 +21,8 @@
     var newCSS = GM_getResourceText ("customCSS");
     GM_addStyle (newCSS);
 
-    GM_addStyle ('#wrapper,.indent,body{background:#002b36}.blue>div,.clear.blue:nth-of-type(47),.mainsection,div:nth-of-type(2)>.clear.blue:nth-of-type(31),img{display:none}*{font-family:dejavu sans;font-size:2vmin}.clear{clear:both}body{color:#fff;font-family:Verdana,Arial,Helvetica;font-size:8pt;padding:10px 15px}#wrapper{width:100%;border:none}.blue,.blue a{color:#268bd2;margin-top:5px}.indent{left:24px}.mainsection{position:fixed;top:0;right:0;margin:15px;overflow-y:scroll;overflow-x:hidden;height:96%;width:75%}.datakey{float:left;color:#839496}.datavalue{float:left;color:#b58900}.btn-info{position:relative;color:#839496;background-color:#073642;border-color:#586e75;margin-top:10px;width:15%;font-size:calc(.8vw + 1vh)!important}.btn-info.focus,.btn-info:focus,.btn-info:hover{color:#839496;background-color:#fdf6e3;border-color:#586e75}');
+    var newCSS1 = GM_getResourceText ("customCSS1");
+    GM_addStyle (newCSS1);
 
     // Button stuff
 
