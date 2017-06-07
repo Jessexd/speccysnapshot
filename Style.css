@@ -63,7 +63,7 @@ body {
     border-color: #586e75;
     margin-top: 10px;
     width: 15%;
-    font-size: calc(0.5vw + 0.5vh)!important;
+    font-size: calc(0.8vw + 1vh)!important;
 }
 .btn-info:hover {
     color: #839496;
