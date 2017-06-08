@@ -72,10 +72,7 @@ body {
     position: absolute;
     left: 30;
 }
-.button {
-    position: relative;
-    color: #fff;
-}
+
 .list-group-item {
     position: relative;
     color: #888;
