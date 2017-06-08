@@ -83,7 +83,10 @@ body {
     color: #fff;
     background-color: #777;
     border:3px solid #586e75;
-    border-radius: .5em !important;
+}
+.toc-div button:focus {
+    border:3px solid #586e75;
+    border-radius: .5em;
 }
 
 .list-group-item {
