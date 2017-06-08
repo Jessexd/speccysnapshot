@@ -1,0 +1,99 @@
+/* Made by desgen */
+/* Edited by Mandevwin */
+ 
+* {
+    font-family: dejavu sans;
+    font-size: 2vmin;
+}
+.clear {
+    clear: both;
+}
+img{
+    position: absolute;
+    
+}
+body {
+    background:#515151 url(img/bg.png);
+    background-repeat: repeat;
+    color: #fff;
+    font-family: Verdana, Arial, Helvetica;
+    font-size: 8pt;
+    padding: 10px 15px;
+}
+#wrapper {
+    background: #515151;
+    width: 100%;
+    height: 100%;
+    border:1px solid #646464;
+}
+.blue,
+.blue a {
+    color: #87cefa;
+    margin-top: 5px;
+}
+.indent {
+    left: 24px;
+    background: transparent;
+}
+.blue.clear > img {
+    vertical-align: middle;
+    position:relative !important;
+    
+}
+.mainsection {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 96%;
+    width: 75%;
+    display: none;
+}
+.datakey {
+    float: left;
+    color: #fff;
+}
+.datavalue {
+    float: left;;
+    color: #FFFF00;
+}
+.blue > div {
+    font-size: 1vmax !important;
+    position: absolute;
+    bottom: 2%;
+    z-index: 1;
+}
+.blue > div a:link {
+    font-size: 1vmax !important;
+}
+.toc-div {
+    position: absolute;
+    left: 30;
+}
+.button {
+    position: relative;
+    color: #fff;
+}
+.list-group-item {
+    position: relative;
+    color: #888;
+    background-color: #5d5d5d;
+    border:1px solid #646464;
+    margin-top: 10px;
+    width: 20%;
+    top: 50;
+    font-size: calc(0.8vw + 1vh)!important;
+}
+.list-group-item:hover {
+    color: #777;
+    background-color: #777;
+    border-color: #586e75;
+}
+
+#list-group-item:focus {
+    color: #fff;
+    background-color: #777;
+    border-color: #586e75;
+}
