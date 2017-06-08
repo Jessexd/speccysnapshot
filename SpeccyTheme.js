@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         SpeccySnapshotSolarized
+// @name         SpeccySnapshotTheme
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Theme for speccy snapshots.
