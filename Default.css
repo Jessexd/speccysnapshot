@@ -83,7 +83,7 @@ body {
     color: #fff;
     background-color: #777;
     border:3px solid #586e75;
-    border-radius: .5em;
+    border-radius: .5em !important;
 }
 
 .list-group-item {
