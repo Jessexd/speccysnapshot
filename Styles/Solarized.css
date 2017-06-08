@@ -8,9 +8,6 @@
 .clear {
     clear: both;
 }
-img {
-    display: none;
-}
 body {
     background: #002b36;
     background-repeat: repeat;
@@ -53,7 +50,9 @@ body {
     color: #b58900;
 }
 .blue > div {
-    display: none;
+     position: fixed;
+     left: 78%;
+    	z-index: 1;
 }
 .btn-info {
     position: relative;
@@ -74,10 +73,4 @@ body {
     color: #839496;
     background-color: #fdf6e3;
     border-color: #586e75;
-}
-div:nth-of-type(2) > .clear.blue:nth-of-type(31){
-        display: none;
-}
-.clear.blue:nth-of-type(47){
-    display: none;
 }
