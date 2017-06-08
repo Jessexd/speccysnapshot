@@ -82,15 +82,15 @@ body {
 .toc-div button:hover {
     color: #fff;
     background-color: #777;
-    border-color: #586e75;
+    border:1px solid #586e75;
+    border-radius: .5em;
 }
 
 .list-group-item {
 
     position: relative;
     background-color: #5d5d5d;
-    border:5px solid #646464;
-    border-radius: .5em;
+    border:1px solid #646464;
     margin-top: 10px;
     width: 20%;
     top: 50;
