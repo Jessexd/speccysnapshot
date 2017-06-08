@@ -57,7 +57,7 @@ body {
 }
 .blue > div {
     position: fixed;
-    left: 78%;
+    bottom: 2%;
     z-index: 1;
 }
 .btn-info {
@@ -67,6 +67,7 @@ body {
     border:1px solid #646464;
     margin-top: 10px;
     width: 20%;
+    top: 50;
     font-size: calc(0.8vw + 1vh)!important;
 }
 .btn-info:hover {
