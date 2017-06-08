@@ -82,7 +82,7 @@ body {
 .toc-div button:hover {
     color: #fff;
     background-color: #777;
-    border:1px solid #586e75;
+    border:3px solid #586e75;
     border-radius: .5em;
 }
 
