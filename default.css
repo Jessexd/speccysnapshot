@@ -73,9 +73,21 @@ body {
     left: 30;
 }
 
+.toc-div button {
+    color: #fff;
+    background-color: #5d5d5d;
+    width: 100%;
+    border-radius: .5em;
+}
+.toc-div button:hover {
+    color: #fff;
+    background-color: #777;
+    border-color: #586e75;
+}
+
 .list-group-item {
+
     position: relative;
-    color: #888;
     background-color: #5d5d5d;
     border:1px solid #646464;
     margin-top: 10px;
@@ -83,14 +95,4 @@ body {
     top: 50;
     font-size: calc(0.8vw + 1vh)!important;
 }
-.list-group-item:hover {
-    color: #777;
-    background-color: #777;
-    border-color: #586e75;
-}
 
-#list-group-item:focus {
-    color: #fff;
-    background-color: #777;
-    border-color: #586e75;
-}
