@@ -11,10 +11,7 @@
 img{
     vertical-align:middle;
     margin:2px;
-    padding:2px
-    position: fixed;
-    left: 76.5%;
-    z-index: 1;
+    padding:2px;
 }
 body {
     background:#515151 url(img/bg.png);
