@@ -9,9 +9,7 @@
     clear: both;
 }
 img{
-    vertical-align:middle;
-    margin:2px;
-    padding:2px
+    display: none;
 }
 body {
     background: #002b36;
@@ -55,9 +53,7 @@ body {
     color: #b58900;
 }
 .blue > div {
-     position: fixed;
-     bottom: 2%;
-     z-index: 1;
+    display: none;
 }
 .btn-info {
     position: relative;
