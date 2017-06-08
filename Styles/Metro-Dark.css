@@ -8,8 +8,10 @@
 .clear {
     clear: both;
 }
-img {
-    display: none;
+img{
+	vertical-align:middle;
+	margin:2px;
+	padding:2px
 }
 body {
     background: #1d1d1d;
@@ -53,7 +55,9 @@ body {
     color: #ffc40d;
 }
 .blue > div {
-    display: none;
+    position: fixed;
+    left: 78%;
+    z-index: 1;
 }
 .btn-info {
     position: relative;
@@ -75,10 +79,4 @@ body {
     color: #fff;
     background-color: #1e7145;
     border: 0px;
-}
-div:nth-of-type(2) > .clear.blue:nth-of-type(31){
-        display: none;
-}
-.clear.blue:nth-of-type(47){
-    display: none;
 }
