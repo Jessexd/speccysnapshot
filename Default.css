@@ -77,7 +77,7 @@ body {
     color: #fff;
     background-color: #5d5d5d;
     width: 100%;
-    border-radius: .5em !important;
+    border-radius: 0px !important;
 }
 .toc-div button:hover {
     color: #fff;
@@ -86,13 +86,66 @@ body {
 }
 
 .list-group-item {
-
     position: relative;
     background-color: #5d5d5d;
-    border:1px solid #646464;
+    border: 1px solid #646464 !important;
     margin-top: 10px;
     width: 20%;
     top: 50;
     font-size: calc(0.8vw + 1vh)!important;
 }
-
+.list-group-item:nth-of-type(1){
+	background: #5d5d5d url(img/249.png);
+    background-repeat: no-repeat;
+    background-position: 99% 5%;
+}
+.list-group-item:nth-of-type(2){
+	background: #5d5d5d url(img/254.png);
+    background-repeat: no-repeat;
+    background-position: 99% 5%;
+}
+.list-group-item:nth-of-type(3){
+	background: #5d5d5d url(img/250.png);
+    background-repeat: no-repeat;
+    background-position: 99% 5%;
+}
+.list-group-item:nth-of-type(4){
+	background: #5d5d5d url(img/255.png);
+    background-repeat: no-repeat;
+    background-position: 99% 5%;
+}
+.list-group-item:nth-of-type(5){
+	background: #5d5d5d url(img/253.png);
+    background-repeat: no-repeat;
+    background-position: 99% 5%;
+}
+.list-group-item:nth-of-type(6){
+	background: #5d5d5d url(img/251.png);
+    background-repeat: no-repeat;
+    background-position: 99% 5%;
+}
+.list-group-item:nth-of-type(7){
+	background: #5d5d5d url(img/252.png);
+    background-repeat: no-repeat;
+    background-position: 99% 5%;
+}
+.list-group-item:nth-of-type(8){
+	background: #5d5d5d url(img/248.png);
+    background-repeat: no-repeat;
+    background-position: 99% 5%;
+}
+.list-group-item:nth-of-type(9){
+	background: #5d5d5d url(img/257.png);
+    background-repeat: no-repeat;
+    background-position: 99% 5%;
+}
+.list-group-item:nth-of-type(10){
+	background: #5d5d5d url(img/262.png);
+    background-repeat: no-repeat;
+    background-position: 99% 5%;
+}
+.list-group-item:nth-of-type(11){
+	background: #5d5d5d url(img/256.png);
+    background-repeat: no-repeat;
+    background-position: 99% 5%;
+}
