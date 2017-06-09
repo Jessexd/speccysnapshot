@@ -1,5 +1,6 @@
 /* Made by desgen */
 /* Edited by Mandevwin */
+/* Solarized Theme */
  
 * {
     font-family: dejavu sans;
@@ -10,9 +11,10 @@
 }
 img{
     display: none;
+    
 }
 body {
-    background: #002b36;
+    background:#002b36;
     background-repeat: repeat;
     color: #fff;
     font-family: Verdana, Arial, Helvetica;
@@ -22,7 +24,8 @@ body {
 #wrapper {
     background: #002b36;
     width: 100%;
-    border: none;
+    height: 100%;
+    border: 0px;
 }
 .blue,
 .blue a {
@@ -31,10 +34,15 @@ body {
 }
 .indent {
     left: 24px;
-    background: #002b36;
+    background: transparent;
+}
+.blue.clear > img {
+    vertical-align: middle;
+    position:relative !important;
+    
 }
 .mainsection {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     margin: 15px 15px;
@@ -49,30 +57,38 @@ body {
     color: #839496;
 }
 .datavalue {
-    float: left;
+    float: left;;
     color: #b58900;
 }
 .blue > div {
-    display: none;
+	display: none;
 }
-.btn-info {
-    position: relative;
+.blue > div a:link {
+    font-size: 1vmax !important;
+}
+.toc-div {
+    position: absolute;
+    left: 30;
+}
+
+.toc-div button {
     color: #839496;
     background-color: #073642;
-    border-color: #586e75;
+    width: 100%;
+    border-radius: 3px !important;
+}
+.toc-div button:hover {
+    color: #839496;
+    background-color: #fdf6e3;
+    border:3px solid #586e75;
+}
+
+.list-group-item {
+    position: relative;
+    background-color: #fdf6e3;
+    border: 1px solid #586e75 !important;
     margin-top: 10px;
     width: 20%;
     top: 50;
     font-size: calc(0.8vw + 1vh)!important;
-}
-.btn-info:hover {
-    color: #839496;
-    background-color: #fdf6e3;
-    border-color: #586e75;
-}
-.btn-info.focus,
-.btn-info:focus {
-    color: #839496;
-    background-color: #fdf6e3;
-    border-color: #586e75;
 }
