@@ -11,6 +11,7 @@
 // @require      https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js
 // @resource     customCSS https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
 // @resource     customCSS1 https://raw.githubusercontent.com/Jessexd/speccysnapshot/master/Default.css
+// @run-at document-start
 // ==/UserScript==
  
 (function() {
