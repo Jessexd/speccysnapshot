@@ -1,0 +1,100 @@
+/* Made by desgen */
+/* Edited by Mandevwin */
+/* Terminal Theme */
+ 
+@import url('http://fonts.googleapis.com/css?family=VT323');
+
+@font-face {
+    font-family: VT323 format('truetype');
+}
+
+* {
+    font-family: VT323;
+    font-size: 2vmin;
+}
+
+.clear {
+    clear: both;
+}
+img{
+    display: none;
+    
+}
+body {
+    background:#000;
+    background-repeat: repeat;
+    color: #fff;
+    font-size: 8pt;
+    padding: 10px 15px;
+}
+#wrapper {
+    background: #000;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+.blue,
+.blue a {
+    color: #00ff00;
+    margin-top: 5px;
+}
+.indent {
+    left: 24px;
+    background: transparent;
+}
+.blue.clear > img {
+    vertical-align: middle;
+    position:relative !important;
+    
+}
+.mainsection {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 96%;
+    width: 75%;
+    display: none;
+}
+.datakey {
+    float: left;
+    color: #fff;
+}
+.datavalue {
+    float: left;;
+    color: #00ff00;
+}
+.blue > div {
+	display: none;
+}
+.blue > div a:link {
+    font-size: 1vmax !important;
+}
+.toc-div {
+    position: absolute;
+    left: 30;
+}
+
+.toc-div button {
+    color: #fff;
+    background-color: #000;
+    width: 100%;
+    border-radius: 0px !important;
+}
+.toc-div button:hover {
+    color: #fff;
+    background-color: #000;
+    border: 3px solid #00ff00;
+}
+
+.list-group-item {
+    position: relative;
+    background-color: #000;
+    border: 1px solid #00ff00 !important;
+    margin-top: 10px;
+    width: 20%;
+    top: 50;
+    font-size: calc(0.8vw + 1vh)!important;
+}
